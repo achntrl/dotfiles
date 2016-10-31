@@ -1,0 +1,3 @@
+[submodule "Frontpage"]
+	path = Frontpage
+	url = git@github.com:achntrl/Frontpage.git

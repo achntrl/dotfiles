@@ -42,7 +42,7 @@ filetype plugin on
 filetype indent on
 
 set background=dark
-colorscheme anotherdark2
+colorscheme dracula
 
 set guifont="Source Code Pro for Powerline":h13
 set antialias

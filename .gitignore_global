@@ -1,0 +1,10 @@
+*~
+.DS_Store
+*.swp
+node_modules/
+npm-debug.log
+.tern-port
+*.~undo-tree~
+dump.rdb
+.ensime
+.ensime_cache/

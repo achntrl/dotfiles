@@ -4,13 +4,13 @@ alias dv="cd /Volumes/MacSD/Drive"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias doc="cd ~/Documents"
-alias p="cd ~/Google\ Drive/projects"
+alias p="cd ~/Drive/projects"
 alias pj="cd /Volumes/MacSD/Drive/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
-alias osy="cd ~/Google\ Drive/Knowledge/3A/Option"
-alias sdsync='rsync -va /Users/alexandre/Google\ Drive /Volumes/MacSD/Drive'
+alias osy="cd ~/Drive/Knowledge/3A/Option"
+alias sdsync='rsync -va /Users/alexandre/Drive /Volumes/MacSD/Drive'
 
 # Get week number
 alias week='date +%V'

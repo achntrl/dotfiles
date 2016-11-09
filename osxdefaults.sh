@@ -174,6 +174,27 @@ else
 fi
 
 echo ""
+echo "Where do you want screenshots to be stored? (hit ENTER if you want ~/Desktop as default)"
+# Thanks https://github.com/omgmog
+read screenshot_location
+echo ""
+if [ -z "${screenshot_location}" ]
+then
+  # If nothing specified, we default to ~/Desktop
+  screenshot_location="${HOME}/Desktop"
+else
+  # Otherwise we use input
+  if [[ "${screenshot_location:0:1}" != "/" ]]
+  then
+    # If input doesn't start with /, assume it's relative to home
+    screenshot_location="${HOME}/${screenshot_location}"
+  fi
+fi
+echo "Setting location to ${screenshot_location}"
+defaults write com.apple.screencapture location -string "${screenshot_location}"
+
+
+echo ""
 echo "Show icons for hard drives, servers, and removable media on the desktop? (y/n)"
 read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then

@@ -45,6 +45,7 @@ FORMULAS=(
     python
     python3
     r
+    rsync
     rust
     screenfetch
     sqlite

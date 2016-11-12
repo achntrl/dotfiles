@@ -88,6 +88,7 @@ mkdir -p oh-my-zsh/custom/themes
 ln -sF ~/.dotfiles/misc/Spaceship.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/Spaceship.zsh-theme
 ln -sF ~/.dotfiles/misc/bullet-train.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/bullet-train.zsh-theme
 ln -sF ~/.dotfiles/misc/dracula.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/dracula.zsh-theme
+ln -sF ~/.dotfiles/misc/sdsync.plist ~/Library/LaunchAgents/sdsync.plist
 
 # zsh completions
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions

@@ -5,13 +5,10 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias doc="cd ~/Documents"
 alias p="cd ~/Drive/projects"
-alias pj="cd /Volumes/MacSD/Drive/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
 alias osy="cd ~/Drive/Knowledge/3A/Option"
-# alias sdsync='rsync -ah --info=progress2 --delete --stats --ignore-errors --force /Users/alexandre/Drive /Volumes/MacSD/ &&
-# rsync -ah --info=progress2 --delete --stats --ignore-errors --force /Users/alexandre/Documents /Volumes/MacSD/'
 
 # Get week number
 alias week='date +%V'

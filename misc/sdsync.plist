@@ -9,6 +9,6 @@
 	<key>Program</key>
 	<string>/Users/alexandre/.dotfiles/misc/sdsync.sh</string>
 	<key>StartInterval</key>
-	<integer>1</integer>
+	<integer>86400</integer>
 </dict>
 </plist>

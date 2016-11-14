@@ -9,6 +9,7 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias osy="cd ~/Drive/Knowledge/3A/Option"
+alias sdsync="source ~/.dotfiles/misc/sdsync.sh"
 
 # Get week number
 alias week='date +%V'

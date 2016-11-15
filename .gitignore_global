@@ -8,3 +8,10 @@ npm-debug.log
 dump.rdb
 .ensime
 .ensime_cache/
+Icon?
+Thumbs.db
+.idea/
+tags
+doc/tags
+.DS_Store?
+.nbproject/

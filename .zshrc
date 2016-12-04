@@ -82,3 +82,6 @@ source ~/.dotfiles/.env
 source ~/.dotfiles/.function
 
 
+
+# added by travis gem
+[ -f /Users/alexandre/.travis/travis.sh ] && source /Users/alexandre/.travis/travis.sh

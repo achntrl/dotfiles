@@ -11,7 +11,8 @@ alias j="jobs"
 alias osy="cd ~/Drive/Knowledge/3A/Option"
 alias sdsync="source ~/.dotfiles/misc/sdsync.sh"
 alias theodo="cd ~/Documents/theodo"
-
+alias p2="python"
+alias p3="python3"
 # Get week number
 alias week='date +%V'
 

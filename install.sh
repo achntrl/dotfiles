@@ -22,6 +22,9 @@ echo -n "Changing to the $dir directory ..."
 cd $dir
 echo "done"
 
+if [ ! `cat /etc/shells | grep /usr/local/bin/zsh` ]; then
+        echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+fi
 
 install_zsh () {
 # Test to see if zshell is installed.  If it is:
@@ -91,5 +94,4 @@ ln -sF ~/.dotfiles/misc/dracula.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/dr
 ln -sF ~/.dotfiles/misc/sdsync.plist ~/Library/LaunchAgents/sdsync.plist
 
 # zsh completions
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-
+git clone git://github.com/zsh-users/zsh-autosuggestions oh-my-zsh/plugins/zsh-autosuggestions

@@ -50,7 +50,7 @@ set antialias
 " Activation de NERDTree au lancement de vim
 autocmd vimenter * NERDTree | wincmd p 
 
-" Desactiver les touches directionnelles
+" Deactivate arrow keys
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
@@ -59,8 +59,22 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
-imap ;; <Esc>
-map ;; <Esc>
+
+"Deactivate scrolling
+:nmap <ScrollWheelUp> <nop>
+:nmap <S-ScrollWheelUp> <nop>
+:nmap <C-ScrollWheelUp> <nop>
+:nmap <ScrollWheelDown> <nop>
+:nmap <S-ScrollWheelDown> <nop>
+:nmap <C-ScrollWheelDown> <nop>
+:nmap <ScrollWheelLeft> <nop>
+:nmap <S-ScrollWheelLeft> <nop>
+:nmap <C-ScrollWheelLeft> <nop>
+:nmap <ScrollWheelRight> <nop>
+:nmap <S-ScrollWheelRight> <nop>
+:nmap <C-ScrollWheelRight> <nop>
+
+" Ctrl + N for NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
 " size of a hard tabstop
@@ -75,4 +89,17 @@ set softtabstop=4
 
  " powerline symbols
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
+autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+" Close all open buffers on entering a window if the only
+" " buffer that's left is the NERDTree buffer
+function! s:CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+      if winnr("$") == 1
+        q
+      endif
+     endif
+   endif
+ endfunction

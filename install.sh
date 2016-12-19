@@ -22,6 +22,9 @@ echo -n "Changing to the $dir directory ..."
 cd $dir
 echo "done"
 
+if [ ! `cat /etc/shells | grep /usr/local/bin/zsh` ]; then
+        echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+fi
 
 install_zsh () {
 # Test to see if zshell is installed.  If it is:
@@ -74,16 +77,24 @@ cd $dir
 echo "done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
-for file in $files; do
+for file in ${files[@]}; do
     if [ -e $file ]; then
         echo "Moving existing $file from ~ to $olddir"
         mv ~/.$file $olddir
     fi
-    echo "Creating symlink to $file in home directory."
-    ln -s $dir/.$file ~/.$file
+
+    if [ $file = oh-my-zsh]; then
+      echo "Creating symlink to $file in home directory."
+      ln -s $dir/$file ~/.$file
+    else
+      echo "Creating symlink to $file in home directory."
+      ln -s $dir/.$file ~/.$file
+    fi
 done
 
-# Manual 
+
+
+# Manual
 mkdir -p oh-my-zsh/custom/themes
 ln -sF ~/.dotfiles/misc/Spaceship.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/Spaceship.zsh-theme
 ln -sF ~/.dotfiles/misc/bullet-train.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/bullet-train.zsh-theme
@@ -91,5 +102,4 @@ ln -sF ~/.dotfiles/misc/dracula.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/dr
 ln -sF ~/.dotfiles/misc/sdsync.plist ~/Library/LaunchAgents/sdsync.plist
 
 # zsh completions
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-
+git clone git://github.com/zsh-users/zsh-autosuggestions oh-my-zsh/plugins/zsh-autosuggestions

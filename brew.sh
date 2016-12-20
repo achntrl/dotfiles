@@ -57,6 +57,8 @@ FONTS=(
   font-source-code-pro-for-powerline
   font-source-code-pro
   font-roboto
+  font-droid-sans-mono
+  font-droid-sans-mono-for-powerline
 )
 
 CASKS=(

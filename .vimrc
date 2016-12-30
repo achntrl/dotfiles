@@ -50,16 +50,6 @@ set antialias
 " Activation de NERDTree au lancement de vim
 autocmd vimenter * NERDTree | wincmd p 
 
-" Deactivate arrow keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
 "Deactivate scrolling
 :nmap <ScrollWheelUp> <nop>
 :nmap <S-ScrollWheelUp> <nop>
@@ -74,6 +64,9 @@ imap <right> <nop>
 :nmap <S-ScrollWheelRight> <nop>
 :nmap <C-ScrollWheelRight> <nop>
 
+" Leader is now ,
+let mapleader=","
+
 " Ctrl + N for NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
@@ -85,21 +78,45 @@ set shiftwidth=4
 
 " a combination of spaces and tabs are used to simulate tab stops at a width
 " other than the (hard)tabstop
-set softtabstop=4
+set softtabstop=2
 
  " powerline symbols
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+" autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 " Close all open buffers on entering a window if the only
 " " buffer that's left is the NERDTree buffer
-function! s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-     endif
-   endif
- endfunction
+" function! s:CloseIfOnlyNerdTreeLeft()
+ "  if exists("t:NERDTreeBufName")
+ "    if bufwinnr(t:NERDTreeBufName) != -1
+ "      if winnr("$") == 1
+ "        q
+ "      endif
+ "     endif
+ "   endif
+ " endfunction
+"
+ " NERD Commenter
+ filetype plugin on
+
+ " Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+ "
+ " " Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+ " " Align line-wise comment delimiters flush left instead of following code
+ " indentation
+let g:NERDDefaultAlign = 'left'
+
+ " " Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+ " " Allow commenting and inverting empty lines (useful when commenting a
+ " region)
+ let g:NERDCommentEmptyLines = 1
+
+ " " Enable trimming of trailing whitespace when uncommenting
+ let g:NERDTrimTrailingWhitespace = 1
+

@@ -48,7 +48,7 @@ set guifont="Source Code Pro for Powerline":h13
 set antialias
 
 " Activation de NERDTree au lancement de vim
-autocmd vimenter * NERDTree | wincmd p 
+" autocmd vimenter * NERDTree | wincmd p 
 
 "Deactivate scrolling
 :nmap <ScrollWheelUp> <nop>

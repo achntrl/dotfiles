@@ -73,3 +73,9 @@ alias matrix='echo -e "1"; while $t; do for i in `seq 1 29`;do r="$[($RANDOM % 2
 
 # Start nvm
 alias nvmstart="export NVM_DIR='$HOME/.nvm' && . '/usr/local/opt/nvm/nvm.sh'"
+
+# Git custom shortcut
+alias gpnm="git push nas master"
+alias gpn="git push nas"
+alias gphm="git push heroku master"
+alias gph="git push heroku"

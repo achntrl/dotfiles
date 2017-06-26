@@ -79,3 +79,6 @@ alias gpnm="git push nas master"
 alias gpn="git push nas"
 alias gphm="git push heroku master"
 alias gph="git push heroku"
+
+# Kill all VSCode processes
+alias killcode=ps aux | grep "Visual Studio" | awk '{print $2}' | xargs kill -9

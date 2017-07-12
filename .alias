@@ -62,6 +62,9 @@ alias pumpitup="osascript -e 'set volume 7'"
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps aux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
+# Kill all VSCode processes
+alias codekill="ps aux | grep \"Visual Studio\" | awk '{print $2}' | xargs kill -9"
+
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
@@ -80,5 +83,4 @@ alias gpn="git push nas"
 alias gphm="git push heroku master"
 alias gph="git push heroku"
 
-# Kill all VSCode processes
-alias killcode=ps aux | grep "Visual Studio" | awk '{print $2}' | xargs kill -9
+alias foldersize="du -sh * .* | gsort -h"

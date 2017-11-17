@@ -63,7 +63,7 @@ alias pumpitup="osascript -e 'set volume 7'"
 alias chromekill="ps aux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
 # Kill all VSCode processes
-alias codekill="ps aux | grep \"Visual Studio\" | awk '{print $2}' | xargs kill -9"
+alias codekill="ps aux | grep 'Visual\ Studio' | awk '{print \$2}' | xargs kill -9"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"

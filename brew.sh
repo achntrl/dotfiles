@@ -63,15 +63,15 @@ FONTS=(
 
 CASKS=(
     1password
-    airfoil
     alfred
     atom
+    bartender
     bettertouchtool
     calibre
     cheatsheet
+	contexts
     dash
     dropbox
-    evernote
     firefox
     flux
     github-desktop
@@ -85,12 +85,10 @@ CASKS=(
     skitch
     skype
     slack
-    sourcetree
     spotify
     steam
-    sublime-text
-    sublime-text3
     telegram
+    timing
     the-unarchiver
     vagrant
     virtualbox

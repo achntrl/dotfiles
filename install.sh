@@ -53,7 +53,6 @@ else
     # If the platform is OS X, tell the user to install zsh :)
     elif [[ $platform == 'Darwin' ]]; then
         echo "Please install zsh, then re-run this script!"
-    
     fi
 fi
 }
@@ -99,6 +98,7 @@ mkdir -p oh-my-zsh/custom/themes
 ln -sF ~/.dotfiles/misc/Spaceship.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/Spaceship.zsh-theme
 ln -sF ~/.dotfiles/misc/bullet-train.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/bullet-train.zsh-theme
 ln -sF ~/.dotfiles/misc/dracula.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/dracula.zsh-theme
+mkdir ~/logs
 ln -sF ~/.dotfiles/misc/sdsync.plist ~/Library/LaunchAgents/sdsync.plist
 
 # zsh completions

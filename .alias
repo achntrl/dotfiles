@@ -84,3 +84,4 @@ alias gphm="git push heroku master"
 alias gph="git push heroku"
 
 alias foldersize="du -sh * .* | gsort -h"
+alias k=kubectl

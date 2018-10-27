@@ -103,4 +103,4 @@ mkdir ~/logs
 ln -sF ~/.dotfiles/misc/sdsync.plist ~/Library/LaunchAgents/sdsync.plist
 
 # zsh completions
-git clone git://github.com/zsh-users/zsh-autosuggestions oh-my-zsh/plugins/zsh-autosuggestions
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.dotfiles/oh-my-zsh/custom/plugins/zsh-autosuggestions

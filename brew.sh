@@ -35,7 +35,6 @@ FORMULAS=(
     coreutils
     gcc
     git
-    kwm
     mercurial
     mongodb
     mysql
@@ -44,7 +43,6 @@ FORMULAS=(
     postgresql
     python
     python3
-    r
     rsync
     rust
     screenfetch
@@ -68,8 +66,7 @@ CASKS=(
     bartender
     bettertouchtool
     calibre
-    cheatsheet
-	contexts
+    contexts
     dash
     dropbox
     firefox
@@ -118,4 +115,3 @@ brew linkapps macvim
 brew cleanup
 
 brew cask cleanup
-

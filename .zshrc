@@ -53,7 +53,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sublime virtualenv python heroku  brew github osx pip pep8 sudo compleat z gpg-agent)
+plugins=(git virtualenv python heroku brew github osx pip pep8 sudo compleat z gpg-agent)
 # plugins=(git sublime virtualenv python heroku zsh-syntax-highlighting brew github osx pip pep8 sudo compleat zsh-autosuggestions z gpg-agent)
 source $ZSH/oh-my-zsh.sh
 
@@ -80,6 +80,3 @@ source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/.alias
 source ~/.dotfiles/.env
 source ~/.dotfiles/.function
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"

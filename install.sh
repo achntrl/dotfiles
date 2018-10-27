@@ -98,6 +98,7 @@ mkdir -p oh-my-zsh/custom/themes
 ln -sF ~/.dotfiles/misc/Spaceship.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/Spaceship.zsh-theme
 ln -sF ~/.dotfiles/misc/bullet-train.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/bullet-train.zsh-theme
 ln -sF ~/.dotfiles/misc/dracula.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/dracula.zsh-theme
+ln -sF ~/.dotfiles/misc/avit.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/avit.zsh-theme
 mkdir ~/logs
 ln -sF ~/.dotfiles/misc/sdsync.plist ~/Library/LaunchAgents/sdsync.plist
 

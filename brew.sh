@@ -71,6 +71,7 @@ CASKS=(
     dropbox
     firefox
     flux
+    fzf
     github-desktop
     google-chrome
     google-drive

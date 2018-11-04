@@ -77,6 +77,8 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+export LC_ALL=en_US.UTF-8
+
 source ~/.dotfiles/.alias
 source ~/.dotfiles/.env
 source ~/.dotfiles/.function

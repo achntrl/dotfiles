@@ -79,8 +79,10 @@ source $ZSH/oh-my-zsh.sh
 
 export LC_ALL=en_US.UTF-8
 
-source ~/.dotfiles/.alias
-source ~/.dotfiles/.env
-source ~/.dotfiles/.function
+source  $HOME/.dotfiles/.alias.sh
+source  $HOME/.dotfiles/.env.sh
+source  $HOME/.dotfiles/.function.sh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [ -f $HOME/.dotfiles/.datadog.sh ]; then source $HOME/.dotfiles/.datadog.sh; fi
+
+[ -f  $HOME/.fzf.zsh ] && source  $HOME/.fzf.zsh

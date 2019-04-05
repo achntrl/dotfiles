@@ -85,3 +85,9 @@ alias foldersize="du -sh * .* | gsort -h"
 alias k="kubectl"
 alias em="emacsclient -t"
 alias ema="emacsclient -a"
+
+# Kubernetes
+alias kx="kubectx"
+alias kn="kubens"
+alias kgsts="kubectl get sts"
+alias kgstswide="kubectl get sts -o wide"

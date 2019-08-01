@@ -35,3 +35,8 @@ fi
 if [ -d "/usr/local/opt/llvm/bin" ]; then
     export PATH="/usr/local/opt/llvm/bin:$PATH"
 fi
+
+source <(kubectl completion zsh)
+source /Users/alexandre.chaintreuil/bin/kubectl-fzf/kubectl_fzf.sh
+source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+PS1='$(kube_ps1)'$PS1

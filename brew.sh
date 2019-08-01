@@ -35,6 +35,7 @@ FORMULAS=(
     coreutils
     gcc
     git
+    kube-ps1
     mercurial
     mongodb
     mysql

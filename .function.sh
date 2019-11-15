@@ -237,6 +237,16 @@ function o() {
 	fi;
 }
 
+# `c` with no arguments opens the current directory in VS Code Editor, otherwise
+# opens the given location
+function c() {
+	if [ $# -eq 0 ]; then
+		code .;
+	else
+		code "$@";
+	fi;
+}
+
 # `tre` is a shorthand for `tree` with hidden files and color enabled, ignoring
 # the `.git` directory, listing directories first. The output gets piped into
 # `less` with options to preserve color and line numbers, unless the output is

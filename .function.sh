@@ -255,13 +255,6 @@ function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
 
-
-function hubpr() {
-        hub pull-request -m \"[INTE]$1\" -b integration -h `git rev-parse --abbrev-ref HEAD`;
-        hub pull-request -m \"[PREPROD]$1\" -b preprod -h `git rev-parse --abbrev-ref HEAD`;
-        hub pull-request -m \"[PROD]$1\" -b prod -h `git rev-parse --abbrev-ref HEAD`;
-}
-
 # generate .gitignore file
 function gi() {
     curl -L -s https://www.gitignore.io/api/$@ ;

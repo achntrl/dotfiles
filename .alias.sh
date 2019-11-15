@@ -80,6 +80,7 @@ alias gpn="git push nas"
 alias gphm="git push heroku master"
 alias gph="git push heroku"
 alias gpgm="git push gogs master"
+alias grbp="git rebase prod"
 
 alias foldersize="du -sh * .* | gsort -h"
 alias k="kubectl"

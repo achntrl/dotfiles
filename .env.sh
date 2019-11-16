@@ -11,7 +11,7 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 fi
 
 if [ -d "$HOME/.multirust" ]; then
-    export RUST_SRC_PATH="$HOME/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
+    export RUST_SRC_PATH="$HOME/.multirust/toolchains/nightly-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/bin"
 fi
 
 if [ -d "$HOME/go" ]; then

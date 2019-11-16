@@ -80,6 +80,7 @@ CASKS=(
     google-photos-backup
     iterm2
     java
+    kube-ps1
     osxfuse
     skitch
     skype

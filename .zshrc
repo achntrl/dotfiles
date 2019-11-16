@@ -86,3 +86,6 @@ source  $HOME/.dotfiles/.function.sh
 if [ -f $HOME/.dotfiles/.datadog.sh ]; then source $HOME/.dotfiles/.datadog.sh; fi
 
 [ -f  $HOME/.fzf.zsh ] && source  $HOME/.fzf.zsh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

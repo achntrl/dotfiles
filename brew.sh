@@ -88,13 +88,13 @@ CASKS=(
     spotify
     steam
     telegram
-    timing
     the-unarchiver
+    timing
     vagrant
     virtualbox
     vlc
-    xquartz
     wireshark
+    xquartz
 )
 
 for tap in ${TAPS[@]}

@@ -42,4 +42,5 @@ fi
 
 source <(kubectl completion zsh)
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+eval "$(nodenv init -)"
 PS1='$(kube_ps1)'$PS1

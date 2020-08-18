@@ -259,3 +259,15 @@ function tre() {
 function gi() {
     curl -L -s https://www.gitignore.io/api/$@ ;
 }
+
+who-listen() {
+  lsof -t -i :$1
+}
+kill-listening() {
+  kill -9 $(who-listen $1)
+}
+time_ms() {
+  ts=$(date +%s%N)
+  $@
+  echo "$((($(date +%s%N) - $ts)/1000000))ms"
+}

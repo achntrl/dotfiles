@@ -100,7 +100,7 @@ ln -sF ~/.dotfiles/misc/bullet-train.zsh-theme ~/.dotfiles/oh-my-zsh/custom/them
 ln -sF ~/.dotfiles/misc/dracula.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/dracula.zsh-theme
 ln -sF ~/.dotfiles/misc/avit.zsh-theme ~/.dotfiles/oh-my-zsh/custom/themes/avit.zsh-theme
 mkdir ~/logs
-ln -sF ~/.dotfiles/misc/sdsync.plist ~/Library/LaunchAgents/sdsync.plist
+# ln -sF ~/.dotfiles/misc/sdsync.plist ~/Library/LaunchAgents/sdsync.plist
 
 # zsh completions
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.dotfiles/oh-my-zsh/custom/plugins/zsh-autosuggestions

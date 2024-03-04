@@ -1,3 +1,4 @@
+export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Library/TeX/texbin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -41,6 +42,14 @@ if [ -f $HOME/bin/kubectl-fzf/kubectl_fzf.sh ]; then
 fi
 
 source <(kubectl completion zsh)
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-eval "$(nodenv init -)"
+source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+# eval "$(nodenv init -)"
 PS1='$(kube_ps1)'$PS1
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+
+ssh-add --apple-use-keychain ~/.ssh/datadog_git_commit_signing
+
+# Volta
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"

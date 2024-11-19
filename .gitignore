@@ -3,3 +3,4 @@ oh-my-zsh/
 .credentials
 .vim/.netrwhist
 .datadog.sh
+.datadog.sh.bak

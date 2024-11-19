@@ -46,7 +46,7 @@ source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 # eval "$(nodenv init -)"
 PS1='$(kube_ps1)'$PS1
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+export JAVA_HOME=$(/usr/libexec/java_home -v 21)
 
 ssh-add --apple-use-keychain ~/.ssh/datadog_git_commit_signing
 
